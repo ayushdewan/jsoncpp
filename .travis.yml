@@ -34,18 +34,14 @@ matrix:
       env: LIB_TYPE=static BUILD_TYPE=release
       #- LIB_TYPE=shared BUILD_TYPE=debug
     - os: linux
-      dist: trusty
+      dist: tr
       compiler: clang
       env: LIB_TYPE=static BUILD_TYPE=release
     - os: linux-ppc64le
-      dist: xenial
+      dist: trusty
       compiler: clang
       env: LIB_TYPE=static BUILD_TYPE=release
-      addons:
-      apt:
-          update: true
-          packages:
-              - python3.6
+      
 notifications:
   email: false
 sudo: false
