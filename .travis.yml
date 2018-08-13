@@ -41,6 +41,11 @@ matrix:
       dist: xenial
       compiler: clang
       env: LIB_TYPE=static BUILD_TYPE=release
+      addons:
+      apt:
+          update: true
+          packages:
+              - python3.6
 notifications:
   email: false
 sudo: false
