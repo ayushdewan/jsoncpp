@@ -37,6 +37,10 @@ matrix:
       dist: trusty
       compiler: clang
       env: LIB_TYPE=static BUILD_TYPE=release
+    - os: linux-ppc64le
+      dist: xenial
+      compiler: clang
+      env: LIB_TYPE=static BUILD_TYPE=release
 notifications:
   email: false
 sudo: false
